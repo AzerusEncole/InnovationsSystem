@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="50.0" prefWidth="798.0" styleClass="selection" stylesheets="@../../css/common.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <HBox layoutX="329.0" layoutY="13.0" spacing="10.0" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+            <children>
+                <Button fx:id="editItem" layoutX="329.0" layoutY="13.0" mnemonicParsing="false" text="Редактировать">
+                    <HBox.margin>
+                        <Insets top="1.0" />
+                    </HBox.margin></Button>
+                <Button fx:id="deleteItem" layoutX="381.0" layoutY="13.0" mnemonicParsing="false" text="Удалить">
+                    <HBox.margin>
+                        <Insets top="1.0" />
+                    </HBox.margin></Button>
+            </children>
+        </HBox>
+        <Label layoutX="13.0" layoutY="17.0" prefHeight="17.0" prefWidth="350.0" text="Проект" AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="423.0" />
+    </children>
+</AnchorPane>

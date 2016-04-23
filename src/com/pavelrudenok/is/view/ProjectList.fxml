@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Tab text="Ввод данных" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.pavelrudenok.is.view.ProjectListController">
+    <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+            <children>
+                <ScrollPane prefHeight="517.0" prefWidth="844.0" AnchorPane.bottomAnchor="54.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <content>
+                        <AnchorPane prefHeight="515.0" prefWidth="798.0">
+                            <children>
+                                <VBox fx:id="itemList" layoutX="61.0" layoutY="23.0" prefHeight="827.0" prefWidth="786.0" spacing="5.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+                                    <children>
+                                    </children>
+                                </VBox>
+                            </children>
+                        </AnchorPane>
+                    </content>
+               </ScrollPane>
+                <Button fx:id="addItem" layoutX="14.0" layoutY="532.0" mnemonicParsing="false" text="Добавить проект" AnchorPane.leftAnchor="14.0" />
+                <Button fx:id="clearProjectList" layoutX="496.0" layoutY="532.0" mnemonicParsing="false" text="Очистить" AnchorPane.rightAnchor="14.0" />
+                <Button fx:id="calculateStatistic" layoutX="132.0" layoutY="532.0" mnemonicParsing="false" text="Рассчитать" AnchorPane.leftAnchor="132.0" />
+            </children>
+        </AnchorPane>
+    </content>
+</Tab>

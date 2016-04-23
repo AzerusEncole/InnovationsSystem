@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="346.0" prefWidth="413.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.pavelrudenok.is.view.ProductEditMenuController">
+   <children>
+      <HBox layoutX="135.0" layoutY="23.0" spacing="20.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="20.0">
+         <children>
+            <Label layoutX="135.0" layoutY="27.0" text="Название">
+               <padding>
+                  <Insets top="4.0" />
+               </padding>
+            </Label>
+            <TextField fx:id="name" layoutX="198.0" layoutY="23.0" prefHeight="25.0" prefWidth="240.0" />
+         </children>
+      </HBox>
+      <VBox layoutX="25.0" layoutY="65.0" prefHeight="200.0" prefWidth="350.0" spacing="10.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+         <children>
+            <HBox layoutX="25.0" layoutY="65.0" spacing="54.0">
+               <children>
+                  <Label layoutX="25.0" layoutY="69.0" text="Нижняя граница интервала объема выпуска">
+                     <padding>
+                        <Insets top="4.0" />
+                     </padding>
+                  </Label>
+                  <TextField fx:id="lowLimitVolumeIssue" layoutX="297.0" layoutY="65.0" prefHeight="25.0" prefWidth="73.0" />
+               </children>
+            </HBox>
+            <HBox layoutX="25.0" layoutY="95.0" spacing="53.0">
+               <children>
+                  <Label layoutX="25.0" layoutY="99.0" text="Верхняя граница интервала объема выпуска">
+                     <padding>
+                        <Insets top="4.0" />
+                     </padding>
+                  </Label>
+                  <TextField fx:id="highLimitVolumeIssue" layoutX="297.0" layoutY="95.0" prefHeight="25.0" prefWidth="73.0" />
+               </children>
+            </HBox>
+            <HBox layoutX="25.0" layoutY="124.0" spacing="213.0">
+               <children>
+                  <Label layoutX="25.0" layoutY="128.0" text="Объём выпуска">
+                     <padding>
+                        <Insets top="4.0" />
+                     </padding>
+                  </Label>
+                  <TextField fx:id="volumeIssue" layoutX="297.0" layoutY="124.0" prefHeight="25.0" prefWidth="73.0" />
+               </children>
+            </HBox>
+            <HBox layoutX="25.0" layoutY="154.0" spacing="109.0">
+               <children>
+                  <Label layoutX="25.0" layoutY="158.0" text="Цена реализации объёма выпуска">
+                     <padding>
+                        <Insets top="4.0" />
+                     </padding>
+                  </Label>
+                  <TextField fx:id="priceImplementationVolumeIssue" layoutX="297.0" layoutY="154.0" prefHeight="25.0" prefWidth="73.0" />
+               </children>
+            </HBox>
+            <HBox layoutX="25.0" layoutY="188.0" spacing="66.0">
+               <children>
+                  <Label layoutX="25.0" layoutY="192.0" text="Прямые материальные затраты на выпуск">
+                     <padding>
+                        <Insets top="4.0" />
+                     </padding>
+                  </Label>
+                  <TextField fx:id="materialCoastsImplementation" layoutX="297.0" layoutY="188.0" prefHeight="25.0" prefWidth="73.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="25.0" prefWidth="281.0">
+               <children>
+                  <AnchorPane prefHeight="25.0" prefWidth="373.0">
+                     <children>
+                        <Button fx:id="groupElement" layoutX="64.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="136.0" text="Группы элементов" AnchorPane.leftAnchor="119.0" AnchorPane.rightAnchor="119.0" />
+                     </children>
+                  </AnchorPane>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+      <Button fx:id="addProduct" layoutX="148.0" layoutY="296.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="113.0" text="Обновить" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="150.0" />
+   </children>
+</AnchorPane>
